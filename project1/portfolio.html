@@ -3,47 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Momo+Signature&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>HTML project 1</title>
 </head>
 <body>
-    <header>
-        <h1>My portfolio</h1>
-        <nav>
-            <a href="home.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="work.html">Work</a>
-            <a href="resume.html">Resume</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <iframe scr="https://www.youtube.com/watch?v=54Nq_LlHi2Y"></iframe>
+    <div class="navbar-container">
+            <header>
+            <h1>My portfolio</h1>
+
+            <nav>
+                <ul class="about-container">
+    
+                   <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                   <li><a href="work.html">Work</a></li>
+                   <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="content-container">
+    <video width="50%" loop autoplap controls >
+        <source src="Man_working.mp4">
+    </video>
     <main id="Home">
         <section>
             <header>
-                <h2>Welcome to my portfolio</h2>
+                <h2 class="welcome">Welcome to my portfolio</h2>
             </header>
-            <p>I am a web developer personate about buildinng web application</p>
+            <p class="welcome-paragraph">I am a web developer personate about buildinng web application.</p>
         </section>
         <section id="about">
             <header>
-                <h2>Work</h2>
+                <h2 class="work">Work</h2>
             </header>
-            <article>I am a software developer. I love to be creative, and solve problem. Innovation is my core value</article>
+            <article class="work-content">
+            <ol>
+                <li>I am a software developer.</li>
+                <li>I love to be creative, and solve problem.</li>
+                <li>Innovation is my core value</li>
+            </ol>  
+        </article>
         </section>
         <section>
             <header>
-                <h2 id="my resume">My skills</h2>
+                <h2 class="my-resume">My skills</h2>
             </header>
             <article>
-                <ul>
+                <ul class="skills">
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>JAVASCRIPT</li>
                 </ul>
             </article>
             <aside>
-                <h3>hobbies</h3>
-                <ol>
+                <h3 class="hobbies-head">hobbies</h3>
+                <ol class="hobbies-list">
                     <li>coding</li>
                     <li>Reading</li>
                     <li>Writing</li>
@@ -52,15 +71,19 @@
 
         </section>
         <section>
-            <header>
-                <h2>Contact</h2>
-            </header>
+            
         </section>
     </main>
-    <footer>
-        <p>Author: Adepoju Adeyinka <br>
-        <a href="mailto: adeyinke@gmail.com">adeyinke@gmail.com</a>
-        </p>
-    </footer>
+    </div>
+    <div class="footer-container">
+        <header>
+                <h2>Contact</h2>
+            </header>
+        <footer>
+            <p>Author: Adepoju Adeyinka <br>
+            <a href="mailto: adeyinke@gmail.com" class="author-email">adeyinke@gmail.com</a>
+            </p>
+        </footer>
+    </div>
 </body>
 </html>
