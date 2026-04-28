@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Your Online Store</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <span class="brand-icon">🛒</span> ShopEase
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#products">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-75">
+                <div class="col-lg-6">
+                    <h1 class="hero-title">Discover Amazing Products</h1>
+                    <p class="hero-subtitle">Shop the latest trends and exclusive deals. Quality products at unbeatable prices.</p>
+                    <a href="#products" class="btn btn-primary btn-lg shop-now-btn">Shop Now</a>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=600&h=400&fit=crop" alt="Shopping" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Featured Products</h2>
+                <p class="section-subtitle">Explore our curated collection of premium products</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Product Card 1 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300&h=300&fit=crop" alt="Smart Watch" class="img-fluid">
+                            <span class="badge bg-success">New</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Smart Watch</h3>
+                            <p class="product-description">Track your fitness and stay connected with our latest smartwatch.</p>
+                            <div class="product-price">$299.99</div>
+                            <button class="btn btn-primary w-100 shop-now-btn">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=300&fit=crop" alt="Wireless Headphones" class="img-fluid">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Wireless Headphones</h3>
+                            <p class="product-description">Premium sound quality with active noise cancellation.</p>
+                            <div class="product-price">$199.99</div>
+                            <button class="btn btn-primary w-100 shop-now-btn">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=300&h=300&fit=crop" alt="Smart Watch Pro" class="img-fluid">
+                            <span class="badge bg-warning text-dark">Sale</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Smart Watch Pro</h3>
+                            <p class="product-description">Advanced health monitoring with sleek design.</p>
+                            <div class="product-price">
+                                <span class="original-price">$449.99</span>
+                                <span class="sale-price">$349.99</span>
+                            </div>
+                            <button class="btn btn-primary w-100 shop-now-btn">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=300&h=300&fit=crop" alt="Bluetooth Speaker" class="img-fluid">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Bluetooth Speaker</h3>
+                            <p class="product-description">Portable speaker with 360° surround sound.</p>
+                            <div class="product-price">$89.99</div>
+                            <button class="btn btn-primary w-100 shop-now-btn">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-12 col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">🚚</div>
+                        <h4>Free Shipping</h4>
+                        <p>On orders over $50</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">🔒</div>
+                        <h4>Secure Payment</h4>
+                        <p>100% secure checkout</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">↩️</div>
+                        <h4>Easy Returns</h4>
+                        <p>30-day return policy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <h5 class="footer-title">ShopEase</h5>
+                    <p class="footer-text">Your one-stop destination for premium products at unbeatable prices.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Instagram</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h5 class="footer-title">Contact Us</h5>
+                    <ul class="footer-links">
+                        <li>📧 support@shopease.com</li>
+                        <li>📞 1-800-SHOP-EASE</li>
+                        <li>📍 123 Commerce Street, NY 10001</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p>&copy; 2026 ShopEase. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
