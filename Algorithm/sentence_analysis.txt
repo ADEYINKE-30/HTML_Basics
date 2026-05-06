@@ -1,0 +1,121 @@
+================================================================================
+ALGORITHM: Analyze a Sentence
+================================================================================
+Objective: Read a sentence character by character and determine:
+  1. The length of the sentence (total number of characters)
+  2. The number of words (separated by single spaces)
+  3. The number of vowels
+
+================================================================================
+VARIABLES (Three Counters)
+================================================================================
+  - length_counter     : Counts total characters in the sentence
+  - word_counter       : Counts the number of words
+  - vowel_counter      : Counts the number of vowels
+  - sentence           : Stores the input sentence
+  - vowels             : Set of characters {a, e, i, o, u, A, E, I, O, U}
+
+================================================================================
+ALGORITHM STEPS
+================================================================================
+
+STEP 1: INITIALIZATION
+  ├─ SET length_counter = 0
+  ├─ SET word_counter = 1          (Initialize to 1 because a sentence has at least 1 word)
+  ├─ SET vowel_counter = 0
+  └─ INPUT sentence               (Read the sentence from user)
+
+STEP 2: PROCESS EACH CHARACTER
+  FOR each character 'c' in sentence DO:
+    
+    ├─ INCREMENT length_counter    (Count every character including the period)
+    │
+    ├─ IF c is a space THEN:
+    │   INCREMENT word_counter     (Each space marks a new word)
+    │
+    ├─ IF c is a vowel (a,e,i,o,u,A,E,I,O,U) THEN:
+    │   INCREMENT vowel_counter    (Count the vowel)
+    │
+    └─ (Continue to next character)
+
+STEP 3: OUTPUT RESULTS
+  ├─ DISPLAY "Length of sentence: " + length_counter
+  ├─ DISPLAY "Number of words: " + word_counter
+  ├─ DISPLAY "Number of vowels: " + vowel_counter
+  └─ END
+
+================================================================================
+PSEUDOCODE DETAILED VERSION
+================================================================================
+
+BEGIN
+    DECLARE length_counter, word_counter, vowel_counter AS INTEGER
+    DECLARE sentence AS STRING
+    DECLARE vowels AS SET = {a, e, i, o, u, A, E, I, O, U}
+    
+    SET length_counter = 0
+    SET word_counter = 1
+    SET vowel_counter = 0
+    
+    OUTPUT "Enter a sentence (ending with a period): "
+    INPUT sentence
+    
+    FOR EACH character current_char IN sentence DO
+        // Count every character
+        length_counter = length_counter + 1
+        
+        // Count words (each space indicates a word separator)
+        IF current_char = ' ' THEN
+            word_counter = word_counter + 1
+        END IF
+        
+        // Count vowels
+        IF current_char IS IN vowels THEN
+            vowel_counter = vowel_counter + 1
+        END IF
+    END FOR
+    
+    OUTPUT "=================================================="
+    OUTPUT "Length of sentence: " + length_counter
+    OUTPUT "Number of words: " + word_counter
+    OUTPUT "Number of vowels: " + vowel_counter
+    OUTPUT "=================================================="
+    
+END
+
+================================================================================
+EXAMPLE WALKTHROUGH
+================================================================================
+
+Input: "Hello world."
+
+Character-by-character breakdown:
+├─ 'H' : length=1, words=1, vowels=0
+├─ 'e' : length=2, words=1, vowels=1 (e is a vowel)
+├─ 'l' : length=3, words=1, vowels=1
+├─ 'l' : length=4, words=1, vowels=1
+├─ 'o' : length=5, words=1, vowels=2 (o is a vowel)
+├─ ' ' : length=6, words=2, vowels=2 (space marks new word)
+├─ 'w' : length=7, words=2, vowels=2
+├─ 'o' : length=8, words=2, vowels=3 (o is a vowel)
+├─ 'r' : length=9, words=2, vowels=3
+├─ 'l' : length=10, words=2, vowels=3
+├─ 'd' : length=11, words=2, vowels=3
+└─ '.' : length=12, words=2, vowels=3
+
+RESULTS:
+  ✓ Length of sentence: 12
+  ✓ Number of words: 2
+  ✓ Number of vowels: 3
+
+================================================================================
+KEY POINTS
+================================================================================
+
+1. length_counter includes ALL characters (letters, spaces, punctuation)
+2. word_counter counts spaces + 1 (since the first word has no space before it)
+3. vowel_counter counts both uppercase and lowercase vowels
+4. The algorithm processes the sentence sequentially, one character at a time
+5. The period (.) at the end is included in the length count
+
+================================================================================
