@@ -1,0 +1,31 @@
+.container {
+  max-width: 480px;
+  margin: 80px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+#color-box {
+  width: 280px;
+  height: 220px;
+  margin: 24px auto;
+  background-color: #8bc34a;
+  border-radius: 14px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+#change-color-btn {
+  padding: 14px 24px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#change-color-btn:hover {
+  background-color: #125fa1;
+}
