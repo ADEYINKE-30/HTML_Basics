@@ -1,0 +1,76 @@
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 20px;
+}
+
+.product-card {
+  width: min(100%, 760px);
+  border: 0;
+  border-radius: 28px;
+  overflow: hidden;
+  background: rgba(8, 15, 30, 0.68);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.42);
+  color: #e2e8f0;
+}
+
+.product-card .card-body {
+  padding: 2rem;
+}
+
+.product-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(56, 189, 248, 0.16);
+  color: #7dd3fc;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.product-title {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-weight: 800;
+  line-height: 1;
+  color: #f8fafc;
+}
+
+.product-price {
+  margin: 1rem 0 1.25rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fbbf24;
+}
+
+.product-description {
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+
+.product-image {
+  width: 100%;
+  max-height: 360px;
+  object-fit: cover;
+  display: block;
+}
+
+.greeting {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: #cbd5e1;
+  text-align: center;
+}
+
+.greeting strong {
+  color: #fff7ed;
+}

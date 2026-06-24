@@ -1,0 +1,19 @@
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.14), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(255, 190, 92, 0.18), transparent 24%),
+    linear-gradient(135deg, #07111f 0%, #102341 48%, #1c2f56 100%);
+  color: #f8fafc;
+}
+
+a {
+  color: inherit;
+}
